@@ -1,0 +1,67 @@
+.nav-link {
+  position: relative;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color var(--animation-duration);
+}
+#brand span {
+  color: aqua;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: all var(--animation-duration);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--animation-duration);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all var(--animation-duration);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.skill-tag {
+  background: var(--bg-light);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  transition: all var(--animation-duration);
+}
+
+.skill-tag:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
