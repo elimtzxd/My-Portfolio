@@ -2,9 +2,9 @@
   <div class="max-w-4xl mx-auto">
     <div class="grid md:grid-cols-2 gap-12">
       <div class="animate-fade-in">
-        <h2 class="text-4xl font-bold mb-6">Contacto</h2>
+        <h2 class="text-4xl font-bold mb-6">Contact me</h2>
         <p class="text-gray-600 mb-8">
-          ¿Tienes una propuesta en mente? ¡Me encantaría escucharlo!
+          Do you have a proposal in mind? I'd love to hear it!
         </p>
         <div class="space-y-6">
           <div class="flex items-center space-x-4">
@@ -26,8 +26,8 @@
               </svg>
             </div>
             <div>
-              <h3 class="font-semibold">Ubicación</h3>
-              <p class="text-gray-600">Aguascalientes, México</p>
+              <h3 class="font-semibold">Ubication:</h3>
+              <p class="text-gray-600">Aguascalientes, Mexico</p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
       <div class="card animate-fade-in">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
           <div>
-            <label class="block text-sm font-medium text-gray-700">Nombre</label>
+            <label class="block text-sm font-medium text-gray-700">Name</label>
             <input
               type="text"
               formControlName="name"
@@ -51,7 +51,7 @@
             />
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <label class="block text-sm font-medium text-gray-700">Message</label>
             <textarea
               formControlName="message"
               rows="4"
